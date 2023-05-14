@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'League Spartan', sans-serif;
+    box-sizing: border-box;
+}
+
+/* menu */
+nav {
+    background-color: #0c0b0b;
+    padding: 15px;
+    position: relative;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    color: #950101;
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav ul li a {
+    color: #950101;
+    text-decoration: none;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    bottom: 10px;
+}
+
+/* main */
+.God {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    border: 10px solid #0c0b0b;
+    background-color: #AF0404;
+}
+
+.God__content {
+    display: inline-block;
+    width: 48%;
+    vertical-align: top;
+    padding: 25px;
+    margin: 15px 0;
+}
+
+.God img {
+    display: inline-block;
+    padding: 22px;
+    margin: 1px 0;
+}
+
+.God__content h1 {
+    font-size: 35px;
+    color: #0c0b0b;
+    text-align: center;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.God__content p {
+    font-size: 20px;
+    color: #0c0b0b;
+    margin: 10px 0;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.gg {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 50px;
+}
+
+.bg {
+    text-align: left;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 40px;
+}
+
+.mb {
+    background-image: url("../assets/Logo4.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 70px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 28px;
+    /* border: 10px solid #0c0b0b; */
+}
+
+.card {
+    text-align: center;
+    background-color: white;
+    padding: 15px 0;
+}
+
+.card__body {
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    margin: 15px;
+    position: relative;
+}
+
+.card h2 {
+    margin: 6px 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #0c0b0b;
+}
+
+.card img {
+    height: 200px;
+    width: 350px;
+    object-fit: cover;
+}
+
+.line {
+    text-align: center;
+    background-color: white;
+    padding: 15px;
+}
+
+.line__body {
+    display: inline-block;
+    width: 47%;
+    text-align: center;
+    margin: 15px;
+    position: relative;
+}
+
+.line h2 {
+    margin: 6px 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #0c0b0b;
+}
+
+.line__body img {
+    height: 350px;
+    width: 200px;
+    object-fit: cover;
+}
+
+.play {
+    text-align: center;
+    background-color: white;
+    padding: 15px
+}
+
+.play__body {
+    display: inline-block;
+    width: 80%;
+    text-align: left;
+    margin: 15px;
+}
+
+.play__body h2 {
+    padding: 10px 0;
+    font-size: 28px;
+    font-weight: bold;
+    color: #0c0b0b;
+    position: relative;
+    bottom: 25px;
+}
+
+.play__body p {
+    font-size: 20px;
+    position: relative;
+    bottom: 10px;
+}
+
+.play img {
+    display: inline-block;
+    width: 48%;
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+}
+
+.weapon {
+    padding: 30px;
+}
+
+.weapon__body {
+    display: inline-block;
+    width: 24%;
+    margin: 20px 0;
+}
+
+.weapon__body h2 {
+    padding: 15px 0;
+}
+
+.weapon__body img {
+    width: 90%;
+}
+
+.nosy h2 {
+    padding: 15px 10px;
+    font-size: 28px;
+}
+
+.nosy p {
+    padding: 0 10px;
+    font-weight: bold;
+}
+
+/* .weapon__body img{
+    align-tracks: center;
+} */
+
+/* Footer */
+footer {
+    background-color: #0c0b0b;
+    text-align: right;
+    padding: 5px;
+    font-weight: bold;
+    color: #950101;
+}
+
+footer p {
+    display: inline-block;
+    padding: 10px;
+}

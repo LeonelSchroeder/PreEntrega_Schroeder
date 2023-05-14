@@ -41,6 +41,8 @@ nav ul li a {
 }
 
 /* main */
+
+/* Main inicio */
 .God {
     display: inline-block;
     width: 100%;
@@ -80,32 +82,6 @@ nav ul li a {
     text-align: center;
 }
 
-.gg {
-    text-align: center;
-    font-size: 28px;
-    font-weight: bold;
-    padding: 50px;
-}
-
-.bg {
-    text-align: left;
-    font-size: 28px;
-    font-weight: bold;
-    padding: 40px;
-}
-
-.mb {
-    background-image: url("../assets/Logo4.jpg");
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    padding: 70px;
-    text-align: center;
-    font-weight: bold;
-    font-size: 28px;
-    /* border: 10px solid #0c0b0b; */
-}
-
 .card {
     text-align: center;
     background-color: white;
@@ -133,6 +109,34 @@ nav ul li a {
     object-fit: cover;
 }
 
+
+.gg {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 50px;
+}
+
+.bg {
+    text-align: left;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 40px;
+}
+
+.mb {
+    background-image: url("../assets/Logo4.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 70px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 28px;
+    /* border: 10px solid #0c0b0b; */
+}
+
+/* Main Personajes */
 .line {
     text-align: center;
     background-color: white;
@@ -160,6 +164,7 @@ nav ul li a {
     object-fit: cover;
 }
 
+/* Main juegos */
 .play {
     text-align: center;
     background-color: white;
@@ -196,6 +201,7 @@ nav ul li a {
     padding: 10px;
 }
 
+/* Main galeria */
 .weapon {
     padding: 30px;
 }
@@ -214,6 +220,7 @@ nav ul li a {
     width: 90%;
 }
 
+/* Main curiosidades */
 .nosy h2 {
     padding: 15px 10px;
     font-size: 28px;

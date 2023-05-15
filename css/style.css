@@ -133,8 +133,7 @@ nav ul li a {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    text-align: center;
+    justify-content: space-evenly; 
     background-color: white;
     padding: 15px;
 }

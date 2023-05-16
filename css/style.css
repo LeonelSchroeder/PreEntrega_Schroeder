@@ -134,6 +134,7 @@ nav ul li a {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly; 
+    text-align: center;
     background-color: white;
     padding: 15px;
 }

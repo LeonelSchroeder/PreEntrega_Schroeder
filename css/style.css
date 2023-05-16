@@ -9,7 +9,7 @@
 
 /* menu */
 nav {
-    background-color: #0c0b0b;
+    background-color: #8a0000;
     padding: 15px;
     position: relative;
 }
@@ -21,7 +21,7 @@ nav ul {
 
 nav ul li {
     display: inline-block;
-    color: #950101;
+    color: #ffffff;
     padding: 10px;
     margin: 10px;
     font-size: 20px;
@@ -29,7 +29,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #950101;
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -161,14 +161,22 @@ nav ul li a {
 }
 
 /* Main juegos */
+
+.fondo{
+    background-image: url(https://i0.wp.com/imgs.hipertextual.com/wp-content/uploads/2018/04/analisisgodofwar.jpg?fit=1500%2C1000&quality=50&strip=all&ssl=1);
+}
+
 .play {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     text-align: center;
-    background-color: white;
+    background-color: #1f1f1f;
     padding: 15px
+    /* width: 1024px; */
 }
 
 .play__body {
-    display: inline-block;
     width: 80%;
     text-align: left;
     margin: 15px;
@@ -178,23 +186,22 @@ nav ul li a {
     padding: 10px 0;
     font-size: 28px;
     font-weight: bold;
-    color: #0c0b0b;
-    position: relative;
-    bottom: 25px;
+    color: #d1d1d1;
 }
 
 .play__body p {
     font-size: 20px;
-    position: relative;
-    bottom: 10px;
+    padding: 5px;
+    color: #d1d1d1;
 }
 
-.play img {
-    display: inline-block;
-    width: 48%;
+.play__body img {
+    /* float: right; */
     width: 200px;
     height: 200px;
-    padding: 10px;
+    border: solid #8a0000;
+    border-radius: 3px;
+    /* padding: 10px 0px; */
 }
 
 /* Main galeria */

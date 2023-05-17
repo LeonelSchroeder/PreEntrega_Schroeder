@@ -206,21 +206,9 @@ nav ul li a {
 
 /* Main galeria */
 .weapon {
-    padding: 30px;
-}
-
-.weapon__body {
-    display: inline-block;
-    width: 24%;
-    margin: 20px 0;
-}
-
-.weapon__body h2 {
-    padding: 15px 0;
-}
-
-.weapon__body img {
-    width: 90%;
+    display: grid;
+    grid-template-columns: 800px 400px;
+    grid-template-rows: 400px 100px ;
 }
 
 /* Main curiosidades */

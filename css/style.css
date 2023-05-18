@@ -46,7 +46,8 @@ nav ul li a {
 .God {
     display: flex;
     border: 10px solid #0c0b0b;
-    background-color: #AF0404;
+    background-color: #dc3545;
+    margin-top: 50px;
 }
 
 .God__content {

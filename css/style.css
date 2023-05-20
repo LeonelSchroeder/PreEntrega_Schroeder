@@ -8,104 +8,108 @@
 }
 
 /* menu */
-/* nav {
-    background-color: #8a0000;
-    padding: 15px;
-    position: relative;
+.navbar {
+    background-color: #ffffff;
 }
 
-nav ul {
-    list-style-type: none;
-    text-align: center;
+.offcanvas {
+    background-color: #ffffff;
 }
 
-nav ul li {
-    display: inline-block;
-    color: #ffffff;
-    padding: 10px;
-    margin: 10px;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-nav ul li a {
-    color: #ffffff;
-    text-decoration: none;
+.nav-link {
+    color: #000000;
+    margin: 5px;
 }
 
 .logo {
-    width: 80px;
-    height: 80px;
-    position: absolute;
-    bottom: 10px;
-} */
+    height: 40px;
+    width: 160px;
+}
 
 /* main */
 
 /* Main inicio */
 .God {
+    background-image: url(https://i0.wp.com/imgs.hipertextual.com/wp-content/uploads/2018/04/analisisgodofwar.jpg?fit=1500%2C1000&quality=50&strip=all&ssl=1);
+    min-width: 100vh;
+    min-height: 600px;
     display: flex;
-    border: 10px solid #0c0b0b;
-    background-color: #dc3545;
-    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
 }
 
 .God__content {
-    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    width: 800px;
+    background-color: #121314;
 }
 
 .God__content h2 {
+    color: #fffcfc;
     text-align: center;
     font-size: 35px;
     margin: 15px;
 }
 
 .God__content p {
+    color: #fffcfc;
     text-align: left;
     font-size: 18px;
-    font-weight: bold;
+    padding: 10px;
 }
 
-.God img {
-    margin: 5px;
-    border-radius: 5px;
-    width: 35%;
+.time {
+    background-color: #121314;
+    min-height: 600px;
 }
 
-.card {
+.time__body {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.time__img {
+    display: flex;
     justify-content: center;
-    background-color: white;
-    padding: 15px 0;
+    align-content: center;
 }
 
-.card__body {
-    width: 30%;
-    text-align: center;
-    margin: 15px;
+.time h1 {
+    display: flex;
+    justify-content: center;
+    color: #fffcfc;
+    font-size: 50px;
+    padding: 15px;
 }
 
-.card h2 {
-    margin: 6px 0;
-    font-size: 26px;
-    font-weight: bold;
-    color: #0c0b0b;
+.card__container {
+    background-image: url(https://gmedia.playstation.com/is/image/SIEPDC/god-of-war-merch-bg-01-ps4-us-29aug18?$1600px$);
 }
 
-.card__body p {
-    font-size: 20px;
+.card-img-top {
+    height: 250px;
+    border-radius: 5px;
 }
 
-.card img {
-    height: 200px;
-    width: 350px;
-    object-fit: cover;
+.card{
+    background-color: #26272b;
+}
+
+.card-title{
+    color: #fffcfc;
+}
+
+.row {
+    padding: 0;
+    margin: 0;
 }
 
 .gg {
+    color: #fffcfc;
     text-align: center;
-    font-size: 28px;
+    font-size: 30px;
     font-weight: bold;
     padding: 50px;
 }
@@ -134,7 +138,7 @@ nav ul li a {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly; 
+    justify-content: space-evenly;
     text-align: center;
     background-color: white;
     padding: 15px;
@@ -163,7 +167,7 @@ nav ul li a {
 
 /* Main juegos */
 
-.fondo{
+.fondo {
     background-image: url(https://i0.wp.com/imgs.hipertextual.com/wp-content/uploads/2018/04/analisisgodofwar.jpg?fit=1500%2C1000&quality=50&strip=all&ssl=1);
 }
 
@@ -174,7 +178,6 @@ nav ul li a {
     text-align: center;
     background-color: #1f1f1f;
     padding: 15px
-    /* width: 1024px; */
 }
 
 .play__body {

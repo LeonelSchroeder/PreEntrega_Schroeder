@@ -14,15 +14,39 @@
 
 <body>
     <header>
-        <nav>
-            <img src="/assets/logo3.png" alt="Logo" class="logo">
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="/pages/personajes.html">Personajes</a></li>
-                <li><a href="/pages/juegos.html">Juegos</a></li>
-                <li><a href="/pages/galeria.html">Galeria</a></li>
-                <li><a href="/pages/curiosidades.html">Curiosidades</a></li>
-            </ul>
+        <nav class="navbar  fixed-top navbar-expand-md">
+            <div class="container-fluid">
+                <img class="logo" src="/assets/Logo1_1.jpg" alt="Logo GoW">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link fs-4 fw-bold" aria-current="page" href="index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fs-4 fw-bold" href="/pages/personajes.html">Personajes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fs-4 fw-bold" href="/pages/juegos.html">Juegos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fs-4 fw-bold" href="/pages/galeria.html">Galeria</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fs-4 fw-bold" href="/pages/curiosidades.html">Curiosidades</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -38,56 +62,50 @@
                     medida que lucha a través de diversos entornos y escenarios, derrotando enemigos y resolviendo
                     acertijos para avanzar en la historia.</p>
             </div>
-            <img src="/assets/Logo4.jpg" alt="Imagen de kratos">
         </section>
 
-        <section class="gg">
-            <h2>Juegos Principales</h2>
+        <section class="time">
+            <h1>Cronologia</h1>
+            <div class="time__body">
+                <div class="time__img">
+                    <img src="/assets/Linea_tiempo_2.jpg" alt="Cronologia">
+                </div>
+            </div>
         </section>
 
-        <section class="card">
-            <div class="card__body">
-                <img src="assets/God_1.jpeg" alt="God of war 1">
-                <h2>God of War</h2>
-                <p>God of War es un juego de acción y aventura. El juego sigue la historia de Kratos, un guerrero
-                    espartano que busca olvidar sus pecados del pasado y a causa de esto se embarca en una
-                    mision establecida por los dioses Griegos.
-                <p>
+        <section class="contenedor">
+            <div class="card__header">
+                <h2>Caracteristicas clave</h2>
             </div>
 
-            <div class="card__body">
-                <img src="assets/God_2.jpeg" alt="God of war 2">
-                <h2>God of War 2</h2>
-                <p>En God of War 2 se continia la historia de kratos, el cual busca venganza contra los dioses griegos
-                    después de que el lider de estos, Zeus, traicione a kratos. Por este motivo kratos buscara una
-                    manera
-                    de acabar con los dioses.</p>
-            </div>
+            <div class="card__container">
+                <div class="cards c1">
+                    <img src="/assets/Kratos_kill.jpg" class="card__img" alt="...">
+                    <div class="card__body">
+                        <h3 class="card__title">Combate físico visceral</h3>
+                    </div>
+                </div>
 
-            <div class="card__body">
-                <img src="assets/God_3.jpeg" alt="God of war 3">
-                <h2>God of War 3</h2>
-                <p>Este juego comienza donde termino la entrega anterior, con Kratos trepando el Monte Olimpo, en la
-                    gigantesca titan Gaia mientras lucha contra el dios Zeus y los demas dioses Griegos. En este titulo
-                    culmina la saga Griega.</p>
-            </div>
+                <div class="cards c2">
+                    <img src="/assets/Kratos_7.jpg" class="card__img" alt="...">
+                    <div class="card__body">
+                        <h3 class="card__title">Puzles</h3>
+                    </div>
+                </div>
 
-            <div class="card__body">
-                <img src="assets/God_4.jpeg" alt="God of war 4">
-                <h2>God of War 4</h2>
-                <p>El juego se desarrolla en la mitología nórdica, y sigue a Kratos, un ex-dios de la guerra griego, que
-                    ahora vive en un bosque aislado con su hijo, Atreus. La historia comienza después de la muerte de
-                    la esposa de Kratos, y los dos se embarcan en un viaje para esparcir sus cenizas en la cima de la
-                    montañamás alta de los Nueve Reinos.</p>
-            </div>
+                <div class="cards c3">
+                    <img src="/assets/Kratos_8.jpg" class="card__img" alt="...">
+                    <div class="card__body">
+                        <h3 class="card__title">Peleas Epicas</h3>
+                    </div>
+                </div>
 
-            <div class="card__body">
-                <img src="assets/God_6.jpeg" alt="God of war 5">
-                <h2>God of War Ragnarok</h2>
-                <p>God of War: Ragnarok es la continuación directa del juego de 2018, God of War, y continúa la historia
-                    del protagonista Kratos y su hijo Atreus mientras se enfrentan a la llegada del Ragnarok, el fin del
-                    mundo en la mitología nórdica. La trama también explorará la relación entre padre e hijo, así como
-                    los orígenes de Atreus y su conexión con la mitología nórdica.</p>
+                <div class="cards c4">
+                    <img src="/assets/Kratos_4.jpg" class="card__img" alt="...">
+                    <div class="card__body">
+                        <h3 class="card__title">Personajes epicos</h3>
+                    </div>
+                </div>
             </div>
         </section>
 

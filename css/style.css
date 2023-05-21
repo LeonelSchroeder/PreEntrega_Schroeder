@@ -84,26 +84,67 @@
     padding: 15px;
 }
 
-.card__container {
+.contenedor{
     background-image: url(https://gmedia.playstation.com/is/image/SIEPDC/god-of-war-merch-bg-01-ps4-us-29aug18?$1600px$);
 }
 
-.card-img-top {
-    height: 250px;
-    border-radius: 5px;
-}
-
-.card{
-    background-color: #26272b;
-}
-
-.card-title{
+.card__header{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
     color: #fffcfc;
 }
 
-.row {
-    padding: 0;
-    margin: 0;
+.card__header h2{
+    font-size: 50px;
+}
+
+.card__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 15px;
+    grid-template-areas: 
+    "area1 area2"
+    "area3 area4"
+    ;
+}
+
+.cards{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* width: 60%; */
+    padding: 15px;
+}
+
+
+.c1{
+    grid-area: area1;
+}
+.c2{
+    grid-area: area2;
+}
+.c3{
+    grid-area: area3;
+}
+.c4{
+    grid-area: area4;
+}
+
+.card__img {
+    height: 300px;
+    width: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.card__title{
+    color: #0c0b0b;
+    font-weight: bold;
+    padding: 10px;
 }
 
 .gg {
@@ -231,15 +272,15 @@
 } */
 
 /* Footer */
-footer {
-    background-color: #0c0b0b;
-    text-align: right;
-    padding: 5px;
-    font-weight: bold;
-    color: #950101;
+.icons_footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    background-color: #121314;
+    padding: 15px;
 }
 
-footer p {
-    display: inline-block;
-    padding: 10px;
+.bi{
+    color: #950101;
+    font-size: 25px;
 }

@@ -30,7 +30,7 @@
 
 /* Main inicio */
 .God {
-    background-image: url(https://i0.wp.com/imgs.hipertextual.com/wp-content/uploads/2018/04/analisisgodofwar.jpg?fit=1500%2C1000&quality=50&strip=all&ssl=1);
+    background-image: url(../assets/fondo_1.jpg);
     min-width: 100vh;
     min-height: 600px;
     display: flex;
@@ -85,7 +85,7 @@
 }
 
 .contenedor{
-    background-image: url(https://gmedia.playstation.com/is/image/SIEPDC/god-of-war-merch-bg-01-ps4-us-29aug18?$1600px$);
+    background-image: url(../assets/Fondo_2.jpg);
 }
 
 .card__header{
@@ -267,9 +267,9 @@
     font-weight: bold;
 }
 
-/* .weapon__body img{
+.weapon__body img{
     align-tracks: center;
-} */
+}
 
 /* Footer */
 .icons_footer {

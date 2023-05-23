@@ -159,19 +159,20 @@
     padding: 10px;
 }
 
-/* mediaqueries */
+/* mediaqueries Inicio*/
 
-@media (max-width:576px) {
+@media (max-width:480px) {
 
     .God {
         justify-content: center;
         align-content: center;
-        height: 70vh;
+        flex-direction: row;
+        height: 140vh;
     }
 
     .God__content {
-        width: 100%;
-        height: 40vh;
+        width: 60%;
+        height: auto;
     }
 
     .God__content p {
@@ -180,7 +181,7 @@
     }
 
     .time {
-        height: 50vh;
+        height: 60vh;
         width: 100%;
     }
 
@@ -197,21 +198,41 @@
     }
 
     .contenedor {
-        height: 110vh;
+        height: 100%;
         width: 100%;
     }
 
+    .card__container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            "area1"
+            "area2"
+            "area3"
+            "area4"
+    }
+
+    .c1 {
+        grid-area: area1;
+    }
+
+    .c2 {
+        grid-area: area2;
+    }
+
+    .c3 {
+        grid-area: area3;
+    }
+
+    .c4 {
+        grid-area: area4;
+    }
+
+    .card__header h2 {
+        text-align: center;
+    }
 
 }
-
-.gg {
-    color: #fffcfc;
-    text-align: center;
-    font-size: 30px;
-    font-weight: bold;
-    padding: 50px;
-}
-
 
 /* Main Personajes */
 .bg__image {
@@ -277,6 +298,35 @@
     width: 250px;
     border-radius: 15px;
     object-fit: cover;
+}
+
+/* mediaqueries personaje*/
+@media (max-width:480px) {
+
+    .bg__image h1 {
+        text-align: center;
+    }
+
+    .line {
+        background-color: #fffcfc;
+        border-bottom:solid #121314;
+    }
+
+    .line__body {
+        background-color: #121212;
+    }
+
+    .line__body img {
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .bg {
+        color: #121314;
+        background-color: #fffcfc;
+    }
+
+
 }
 
 /* Main juegos */
@@ -353,7 +403,7 @@
     margin-bottom: 0;
 }
 
-.title__arte {
+.title__gallery_2 {
     background-color: #121314;
     color: #fffcfc;
     padding: 15px;
@@ -403,6 +453,30 @@
     background-color: #121314;
 }
 
+/* mediaqueries galeria*/
+@media (max-width:480px) {
+
+    .gallery {
+        background-color: #121314;
+    }
+
+    .title__gallery {
+        background-color: #121212;
+        color: #fffcfc;
+    }
+
+    .gallery_2 {
+        background-color: #fffcfc;
+        padding-bottom: 4rem;
+        border-bottom: solid #121314;
+    }
+
+    .title__gallery_2 {
+        background-color: #fffcfc;
+        color: #121212;
+    }
+}
+
 /* Main curiosidades */
 .nosy h2 {
     padding: 15px 10px;
@@ -447,4 +521,15 @@ footer {
     padding: 15px;
     color: #950101;
     font-size: 25px;
+}
+
+@media (max-width:480px) {
+    .container__footer {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .icons__footer h4 {
+        padding: 25px;
+    }
 }

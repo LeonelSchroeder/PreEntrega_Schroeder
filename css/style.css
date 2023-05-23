@@ -36,7 +36,7 @@
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    min-width: 100vh;
+    width: 100%;
     min-height: 60vh;
     display: flex;
     justify-content: center;
@@ -95,6 +95,7 @@
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
+    width: 100%;
 }
 
 .card__header {
@@ -168,19 +169,19 @@
         height: 70vh;
     }
 
-    .God__content{
-        width: 500px;
-    height: 50vh;
+    .God__content {
+        width: 100%;
+        height: 40vh;
     }
 
-    .God__content p{
+    .God__content p {
         width: auto;
         height: auto;
     }
 
     .time {
         height: 50vh;
-        min-width: 100vh;
+        width: 100%;
     }
 
     .time__img {
@@ -190,14 +191,14 @@
         height: 250px;
     }
 
-    .time__img img{
+    .time__img img {
         width: 400px;
         height: 250px;
     }
 
-    .contenedor{
+    .contenedor {
         height: 110vh;
-        min-width: 100vh;
+        width: 100%;
     }
 
 

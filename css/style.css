@@ -37,7 +37,7 @@
     background-position: center;
     background-attachment: fixed;
     min-width: 100vh;
-    min-height: 600px;
+    min-height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,8 +46,9 @@
 .God__content {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     border-radius: 5px;
-    width: 800px;
+    /* width: 60%; */
     background-color: #121314;
 }
 
@@ -61,24 +62,23 @@
 .God__content p {
     color: #fffcfc;
     text-align: left;
-    font-size: 18px;
+    font-size: 16px;
     padding: 10px;
 }
 
 .time {
     background-color: #121314;
-    min-height: 600px;
+    height: 80vh;
 }
 
-.time__body {
+/* .time__body {
     display: flex;
     flex-direction: column;
-}
+} */
 
 .time__img {
     display: flex;
     justify-content: center;
-    align-content: center;
 }
 
 .time h1 {
@@ -158,6 +158,51 @@
     padding: 10px;
 }
 
+/* mediaqueries */
+
+@media (max-width:576px) {
+
+    .God {
+        justify-content: center;
+        align-content: center;
+        height: 70vh;
+    }
+
+    .God__content{
+        width: 500px;
+    height: 50vh;
+    }
+
+    .God__content p{
+        width: auto;
+        height: auto;
+    }
+
+    .time {
+        height: 50vh;
+        min-width: 100vh;
+    }
+
+    .time__img {
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+        height: 250px;
+    }
+
+    .time__img img{
+        width: 400px;
+        height: 250px;
+    }
+
+    .contenedor{
+        height: 110vh;
+        min-width: 100vh;
+    }
+
+
+}
+
 .gg {
     color: #fffcfc;
     text-align: center;
@@ -166,17 +211,6 @@
     padding: 50px;
 }
 
-.mb {
-    background-image: url("../assets/Logo4.jpg");
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    padding: 70px;
-    text-align: center;
-    font-weight: bold;
-    font-size: 28px;
-    /* border: 10px solid #0c0b0b; */
-}
 
 /* Main Personajes */
 .bg__image {
@@ -318,7 +352,7 @@
     margin-bottom: 0;
 }
 
-.title__arte{
+.title__arte {
     background-color: #121314;
     color: #fffcfc;
     padding: 15px;
@@ -327,14 +361,14 @@
     margin-bottom: 0;
 }
 
-.gallery{
+.gallery {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #fffcfc;
 }
 
-.cards__container{
+.cards__container {
     width: 70%;
 }
 
@@ -347,7 +381,7 @@
     margin: 5px;
 }
 
-.card-img-top{
+.card-img-top {
     border-radius: 10px;
     width: 100%;
     height: 60vh;
@@ -355,13 +389,13 @@
     object-position: fixed;
 }
 
-.row{
+.row {
     --bs-gutter-x: 0rem;
     margin: 0;
     padding: 0;
 }
 
-.gallery_2{
+.gallery_2 {
     display: flex;
     justify-content: center;
     align-items: center;

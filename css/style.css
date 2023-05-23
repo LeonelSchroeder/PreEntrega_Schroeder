@@ -32,6 +32,10 @@
 /* Main inicio */
 .God {
     background-image: url(../assets/fondo_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     min-width: 100vh;
     min-height: 600px;
     display: flex;
@@ -85,18 +89,22 @@
     padding: 15px;
 }
 
-.contenedor{
+.contenedor {
     background-image: url(../assets/Fondo_2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
-.card__header{
+.card__header {
     display: flex;
     justify-content: center;
     padding: 15px;
     color: #fffcfc;
 }
 
-.card__header h2{
+.card__header h2 {
     font-size: 50px;
 }
 
@@ -105,13 +113,13 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
     gap: 15px;
-    grid-template-areas: 
-    "area1 area2"
-    "area3 area4"
+    grid-template-areas:
+        "area1 area2"
+        "area3 area4"
     ;
 }
 
-.cards{
+.cards {
     background-color: transparent;
     display: flex;
     flex-direction: column;
@@ -121,16 +129,19 @@
     padding: 15px;
 }
 
-.c1{
+.c1 {
     grid-area: area1;
 }
-.c2{
+
+.c2 {
     grid-area: area2;
 }
-.c3{
+
+.c3 {
     grid-area: area3;
 }
-.c4{
+
+.c4 {
     grid-area: area4;
 }
 
@@ -141,7 +152,7 @@
     object-fit: cover;
 }
 
-.card__title{
+.card__title {
     color: #0c0b0b;
     font-weight: bold;
     padding: 10px;
@@ -153,13 +164,6 @@
     font-size: 30px;
     font-weight: bold;
     padding: 50px;
-}
-
-.bg {
-    text-align: left;
-    font-size: 28px;
-    font-weight: bold;
-    padding: 40px;
 }
 
 .mb {
@@ -175,41 +179,81 @@
 }
 
 /* Main Personajes */
+.bg__image {
+    background-image: url(../assets/fondo_3.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.bg__image h1 {
+    font-size: 3.4rem;
+    font-weight: 700;
+    color: #0c0b0b;
+    padding: 5px;
+}
+
+.bg__image p {
+    font-size: 2rem;
+    font-weight: 300;
+    color: #000000;
+    letter-spacing: 1px;
+}
+
+.bg {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 30px;
+    color: #fffcfc;
+    margin: 0px;
+    background-color: #121314;
+}
+
 .line {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
     text-align: center;
-    background-color: white;
+    background-color: #121314;
     padding: 15px;
 }
 
 .line__body {
     margin: 15px;
+    border-radius: 15px;
+    width: 250px;
 }
 
 .line__body h2 {
     margin: 6px;
-    font-size: 20px;
+    font-size: 1.5rem;
     font-weight: bold;
-    color: #0c0b0b;
+    color: #fffcfc;
 }
 
 .line__body p {
-    width: 250px;
+    font-size: 18px;
+    color: #fffcfc;
 }
 
 .line__body img {
     height: 450px;
     width: 250px;
+    border-radius: 15px;
     object-fit: cover;
 }
 
 /* Main juegos */
-
 .fondo {
-    background-image: url(https://i0.wp.com/imgs.hipertextual.com/wp-content/uploads/2018/04/analisisgodofwar.jpg?fit=1500%2C1000&quality=50&strip=all&ssl=1);
+    background-image: url(../assets/fondo_1.jpg);
 }
 
 .play {
@@ -253,7 +297,7 @@
 .weapon {
     display: grid;
     grid-template-columns: 800px 400px;
-    grid-template-rows: 400px 100px ;
+    grid-template-rows: 400px 100px;
 }
 
 /* Main curiosidades */
@@ -267,20 +311,37 @@
     font-weight: bold;
 }
 
-.weapon__body img{
+.weapon__body img {
     align-tracks: center;
 }
 
 /* Footer */
-.icons_footer {
-    display: flex;
-    justify-content: space-evenly;
-    align-content: center;
-    background-color: #121314;
-    padding: 15px;
+footer {
+    background-color: #fffcfc;
+    padding: 30px 0px;
 }
 
-.bi{
+.container__footer {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icons__footer h4 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.logo__footer {
+    margin: 10px;
+    height: 50px;
+    width: 220px;
+}
+
+.bi {
+    padding: 15px;
     color: #950101;
     font-size: 25px;
 }

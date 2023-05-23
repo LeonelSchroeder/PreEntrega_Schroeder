@@ -9,6 +9,7 @@
 
 /* menu */
 .navbar {
+    width: 100%;
     background-color: #ffffff;
 }
 
@@ -119,7 +120,6 @@
     /* width: 60%; */
     padding: 15px;
 }
-
 
 .c1{
     grid-area: area1;

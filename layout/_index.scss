@@ -6,7 +6,7 @@
     background-position: center;
     background-attachment: fixed;
     width: 100%;
-    min-height: 60vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,21 +16,22 @@
         flex-direction: column;
         flex-wrap: wrap;
         border-radius: 5px;
-        /* width: 60%; */
+        width: 60%; 
         background-color: #121314;
 
-        h2 {
+        h1 {
             color: #fffcfc;
             text-align: center;
-            font-size: 35px;
+            font-size: 3rem;
             margin: 15px;
         }
 
         p {
             color: #fffcfc;
             text-align: left;
-            font-size: 16px;
-            padding: 10px;
+            font-size: 1.26rem;
+            padding: 20px;
+            margin: 0;
         }
     }
 }
@@ -39,7 +40,7 @@
     background-color: #121314;
     height: 80vh;
 
-    h1 {
+    h2 {
         display: flex;
         justify-content: center;
         color: #fffcfc;

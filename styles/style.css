@@ -8,7 +8,7 @@
 
 .navbar {
   width: 100%;
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.4392156863);
 }
 .navbar .logo {
   height: 40px;
@@ -29,7 +29,7 @@
   background-position: center;
   background-attachment: fixed;
   width: 100%;
-  min-height: 60vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -39,27 +39,28 @@
   flex-direction: column;
   flex-wrap: wrap;
   border-radius: 5px;
-  /* width: 60%; */
+  width: 60%;
   background-color: #121314;
 }
-.God .God__content h2 {
+.God .God__content h1 {
   color: #fffcfc;
   text-align: center;
-  font-size: 35px;
+  font-size: 3rem;
   margin: 15px;
 }
 .God .God__content p {
   color: #fffcfc;
   text-align: left;
-  font-size: 16px;
-  padding: 10px;
+  font-size: 1.26rem;
+  padding: 20px;
+  margin: 0;
 }
 
 .time {
   background-color: #121314;
   height: 80vh;
 }
-.time h1 {
+.time h2 {
   display: flex;
   justify-content: center;
   color: #fffcfc;
@@ -129,28 +130,27 @@
 }
 
 /* Main Personajes */
-.bg__image {
+.banner_champs {
   background-image: url(../assets/fondo_3.jpg);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 80vh;
+  min-height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
-
-.bg__image h1 {
+.banner_champs h1 {
   font-size: 5rem;
   font-weight: bold;
   color: #000000;
   opacity: 0.5;
 }
 
-.bg {
+.bg__line {
   text-align: center;
   font-size: 3rem;
   font-weight: bold;
@@ -168,26 +168,22 @@
   background-color: #121314;
   padding: 15px;
 }
-
-.line__body {
+.line .line__body {
   margin: 15px;
   border-radius: 15px;
   width: 250px;
 }
-
-.line__body h2 {
+.line .line__body h2 {
   margin: 6px;
   font-size: 1.5rem;
   font-weight: bold;
   color: #fffcfc;
 }
-
-.line__body p {
+.line .line__body p {
   font-size: 18px;
   color: #fffcfc;
 }
-
-.line__body img {
+.line .line__body img {
   height: 450px;
   width: 250px;
   border-radius: 15px;
@@ -195,21 +191,20 @@
 }
 
 /* Main galeria */
-.banner_galeria {
+.banner_gallery {
   background-image: url(../assets/fondo_6.jpg);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
-
-.banner_galeria h1 {
+.banner_gallery h1 {
   font-size: 5rem;
   font-weight: bold;
   color: #000000;
@@ -217,7 +212,7 @@
   letter-spacing: 1rem;
 }
 
-.title__gallery {
+.title__gallery_1 {
   background-color: #fffcfc;
   color: #121314;
   padding: 15px;
@@ -235,18 +230,16 @@
   margin-bottom: 0;
 }
 
-.gallery {
+.gallery_1 {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #fffcfc;
 }
-
-.cards__container {
+.gallery_1 .cards__container {
   width: 70%;
 }
-
-.card {
+.gallery_1 .cards__container .card {
   height: 60vh;
   margin-bottom: 0rem;
   border-radius: 10px;
@@ -254,16 +247,14 @@
   margin-bottom: 0rem;
   margin: 5px;
 }
-
-.card-img-top {
+.gallery_1 .cards__container .card .card-img-top {
   border-radius: 10px;
   width: 100%;
   height: 60vh;
   object-fit: cover;
   object-position: fixed;
 }
-
-.row {
+.gallery_1 .row {
   --bs-gutter-x: 0rem;
   margin: 0;
   padding: 0;
@@ -275,10 +266,50 @@
   align-items: center;
   background-color: #121314;
 }
+.gallery_2 .cards__container {
+  width: 70%;
+}
+.gallery_2 .cards__container .card {
+  height: 60vh;
+  margin-bottom: 0rem;
+  border-radius: 10px;
+  border: 0;
+  margin-bottom: 0rem;
+  margin: 5px;
+}
+.gallery_2 .cards__container .card .card-img-top {
+  border-radius: 10px;
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+  object-position: fixed;
+}
+.gallery_2 .row {
+  --bs-gutter-x: 0rem;
+  margin: 0;
+  padding: 0;
+}
 
 /* Main juegos */
-.fondo {
-  background-image: url(../assets/fondo_1.jpg);
+.banner_game {
+  background-image: url(../assets/fondo_juego.png);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.banner_game h1 {
+  font-size: 5rem;
+  font-weight: bold;
+  color: #000000;
+  opacity: 0.7;
+  letter-spacing: 1rem;
 }
 
 .play {
@@ -295,22 +326,18 @@
   text-align: left;
   margin: 15px;
 }
-
 .play__body h2 {
   padding: 10px 0;
   font-size: 28px;
   font-weight: bold;
   color: #d1d1d1;
 }
-
 .play__body p {
   font-size: 20px;
   padding: 5px;
   color: #d1d1d1;
 }
-
 .play__body img {
-  /* float: right; */
   width: 200px;
   height: 200px;
   border: solid #8a0000;
@@ -319,6 +346,27 @@
 }
 
 /* Main curiosidades */
+.banner_curiosities {
+  background-image: url(../assets/fondo_curio.png);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.banner_curiosities h1 {
+  font-size: 5rem;
+  font-weight: bold;
+  color: #000000;
+  opacity: 0.7;
+  letter-spacing: 1rem;
+}
+
 .nosy h2 {
   padding: 15px 10px;
   font-size: 28px;
@@ -327,10 +375,6 @@
 .nosy p {
   padding: 0 10px;
   font-weight: bold;
-}
-
-.weapon__body img {
-  align-tracks: center;
 }
 
 /* Footer */

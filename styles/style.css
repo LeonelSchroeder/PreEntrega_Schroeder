@@ -22,6 +22,37 @@
   margin: 5px;
 }
 
+/* Footer */
+footer {
+  background-color: #fffcfc;
+  padding: 30px 0px;
+}
+footer .container__footer {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .container__footer .icons__footer h4 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #000001;
+}
+footer .container__footer .bi {
+  padding: 15px;
+  color: #191919;
+  font-size: 25px;
+}
+footer .container__footer .bi:hover {
+  color: #950101;
+}
+footer .logo__footer {
+  margin: 10px;
+  height: 50px;
+  width: 220px;
+}
+
 .God {
   background-image: url(../assets/fondo_1.jpg);
   background-repeat: no-repeat;
@@ -224,10 +255,11 @@
 .title__gallery_2 {
   background-color: #121314;
   color: #fffcfc;
-  padding: 15px;
+  padding: 20px;
   text-align: center;
   font-size: 3rem;
   margin-bottom: 0;
+  height: auto;
 }
 
 .gallery_1 {
@@ -312,6 +344,20 @@
   letter-spacing: 1rem;
 }
 
+.titulo__game {
+  height: 6rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.titulo__game .titulo__h2 {
+  font-size: 3rem;
+  color: #000;
+  padding-left: 20px;
+  align-self: center;
+  font-weight: bold;
+}
+
 .play {
   display: flex;
   flex-wrap: wrap;
@@ -326,7 +372,7 @@
   text-align: left;
   margin: 15px;
 }
-.play__body h2 {
+.play__body h3 {
   padding: 10px 0;
   font-size: 28px;
   font-weight: bold;
@@ -342,7 +388,6 @@
   height: 200px;
   border: solid #8a0000;
   border-radius: 3px;
-  /* padding: 10px 0px; */
 }
 
 /* Main curiosidades */
@@ -375,37 +420,6 @@
 .nosy p {
   padding: 0 10px;
   font-weight: bold;
-}
-
-/* Footer */
-footer {
-  background-color: #fffcfc;
-  padding: 30px 0px;
-}
-
-.container__footer {
-  width: 100%;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.icons__footer h4 {
-  font-size: 2rem;
-  font-weight: 700;
-}
-
-.logo__footer {
-  margin: 10px;
-  height: 50px;
-  width: 220px;
-}
-
-.bi {
-  padding: 15px;
-  color: #950101;
-  font-size: 25px;
 }
 
 @media (max-width: 480px) {

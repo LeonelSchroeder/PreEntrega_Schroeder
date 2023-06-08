@@ -1,16 +1,9 @@
 .God {
     background-image: url(../assets/fondo_1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    @include background(no-repeat,cover,center,fixed);
     width: 100%;
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
+    @include flex(column,center,center);
 
     .God__content {
 
@@ -37,8 +30,9 @@
     height: auto;
 
     h2 {
-        display: flex;
-        justify-content: center;
+        @include flex(column,center,center);
+        // display: flex;
+        // justify-content: center;
         color: $font-blanco;
         font-size: 60px;
         padding: 15px;
@@ -52,8 +46,7 @@
             justify-content: center;
 
             img {
-                box-shadow:
-                    10px 10px 10px 0px $fondo-blanco;
+                @extend .shadow-light;
             }
         }
     }

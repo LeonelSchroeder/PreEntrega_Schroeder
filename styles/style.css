@@ -1,4 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan&family=Roboto&display=swap");
+.gradient, .curiosity .curiosity__body__title, .game .game__body .game__content h3 {
+  background-image: linear-gradient(to right, #FF1E1E, #FC2947);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.shadow-black, .curiosity .curiosity__body, .game .game__body {
+  box-shadow: 10px 10px 10px 0px rgba(15, 15, 15, 0.6588235294);
+}
+
+.shadow-light, .line .line__body, .time .time__body .time__img img {
+  box-shadow: 0px 5px 5px 5px rgba(245, 245, 245, 0.631372549);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -63,9 +78,8 @@ footer .logo__footer {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   justify-content: center;
-  align-content: center;
+  align-items: center;
 }
 .God .God__content .God__title {
   color: #F5F5F5;
@@ -88,7 +102,9 @@ footer .logo__footer {
 }
 .time h2 {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   color: #F5F5F5;
   font-size: 60px;
   padding: 15px;
@@ -100,10 +116,6 @@ footer .logo__footer {
   display: flex;
   justify-content: center;
 }
-.time .time__body .time__img img {
-  box-shadow: 10px 10px 10px 0px #fffcfc;
-}
-
 .contenedor {
   background-image: url(../assets/Fondo_2.jpg);
   background-repeat: no-repeat;
@@ -376,7 +388,7 @@ footer .logo__footer {
   flex-direction: row;
   align-self: center;
   background-color: #121314;
-  box-shadow: 10px 10px 10px 0px rgba(15, 15, 15, 0.6588235294);
+  border-radius: 8px;
 }
 .game .game__body .game__img {
   width: 35%;
@@ -386,6 +398,9 @@ footer .logo__footer {
   width: 100%;
   height: auto;
   object-fit: cover;
+  border-radius: 8px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 .game .game__body .game__content {
   display: flex;
@@ -397,14 +412,14 @@ footer .logo__footer {
   overflow: hidden;
 }
 .game .game__body .game__content h3 {
-  font-size: 1.5rem;
-  color: #a7a7a7;
+  font-size: 2.5rem;
+  font-weight: bold;
   padding: 15px;
   margin-bottom: 0rem;
 }
 .game .game__body .game__content p {
   font-size: 1rem;
-  color: #a7a7a7;
+  color: #F5F5F5;
   padding-left: 15px;
   padding-right: 15px;
   margin-bottom: 0rem;
@@ -432,14 +447,36 @@ footer .logo__footer {
   letter-spacing: 1rem;
 }
 
-.nosy h2 {
-  padding: 15px 10px;
-  font-size: 28px;
+.curiosity {
+  background-color: #fffcfc;
+  padding: 40px 20px;
 }
-
-.nosy p {
-  padding: 0 10px;
+.curiosity .curiosity__body {
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #202020;
+  border-radius: 10px;
+}
+.curiosity .curiosity__body:hover {
+  background-color: #000;
+  transition: 0.5s;
+}
+.curiosity .curiosity__body__title {
+  margin-bottom: 0px;
+  font-size: 3rem;
   font-weight: bold;
+  padding: 15px;
+}
+.curiosity .curiosity__body__text {
+  margin-bottom: 0px;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #F5F5F5;
+  padding: 15px;
 }
 
 @media only screen and (max-width: 480px) {
@@ -447,7 +484,6 @@ footer .logo__footer {
     justify-content: center;
     align-content: center;
     flex-direction: row;
-    height: 100vh;
   }
   .God .God__content {
     width: 60%;
@@ -456,6 +492,7 @@ footer .logo__footer {
   .God .God__content p {
     width: auto;
     height: auto;
+    text-align: center;
   }
   .time {
     height: auto;
@@ -497,6 +534,7 @@ footer .logo__footer {
   }
   .line .line__body {
     background-color: #121212;
+    box-shadow: 10px 10px 10px 0px rgba(15, 15, 15, 0.7803921569);
   }
   .line .line__body img {
     border-bottom-right-radius: 0px;
@@ -525,18 +563,26 @@ footer .logo__footer {
     flex-direction: column;
     justify-content: center;
     background-color: #1f1f1f;
+    border-radius: 8px;
   }
   .game .game__body .game__img {
     width: 100%;
   }
+  .game .game__body .game__img img {
+    border-radius: 8px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
   .game .game__body .game__content {
     width: 100%;
   }
-  .game .game__body .game__content h3 {
-    color: #F5F5F5;
-  }
   .game .game__body .game__content p {
-    color: #F5F5F5;
+    text-align: center;
+  }
+  .banner_curiosities h1 {
+    letter-spacing: 0.5rem;
+    font-size: 3rem;
+    text-align: center;
   }
   .container__footer {
     width: 100%;

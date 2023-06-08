@@ -1,16 +1,10 @@
 /* Main Personajes */
 .banner_champs {
     background-image: url(../assets/fondo_3.jpg);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex(column,center,center);
     width: 100%;
     min-height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    @include background(no-repeat,cover,center,fixed);
 
     h1 {
         font-size: 5rem;
@@ -43,6 +37,7 @@
         margin: 15px;
         border-radius: 15px;
         width: 250px;
+        @extend .shadow-light;
 
         h2 {
             margin: 6px;

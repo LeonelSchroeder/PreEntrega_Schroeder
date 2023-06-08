@@ -1,0 +1,34 @@
+// Mixin con parametros
+@mixin flex($direction,$justify,$align){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin background($repeat,$size,$position,$attachment){
+    background-repeat: $repeat;
+    background-size: $size;
+    background-position: $position;
+    background-attachment: $attachment;
+}
+
+// Extend
+.gradient{
+    background-image: linear-gradient(to right, #FF1E1E, #FC2947);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.shadow-black {
+    box-shadow:
+        10px 10px 10px 0px #0f0f0fa8;
+}
+
+.shadow-light {
+    box-shadow:
+        0px 5px 5px 5px #f5f5f5a1;
+}
+
+

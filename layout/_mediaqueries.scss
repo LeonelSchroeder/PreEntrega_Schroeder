@@ -1,124 +1,142 @@
-
-@media (max-width:480px) {
+@media only screen and (max-width:480px) {
 
     // mediaqueries inicio
     .God {
         justify-content: center;
         align-content: center;
         flex-direction: row;
-        height: 140vh;
-    }
+        height: 100vh;
 
-    .God__content {
-        width: 60%;
-        height: auto;
-    }
+        .God__content {
+            width: 60%;
+            height: auto;
 
-    .God__content p {
-        width: auto;
-        height: auto;
+            p {
+                width: auto;
+                height: auto;
+            }
+        }
     }
 
     .time {
-        height: 60vh;
+        height: auto;
         width: 100%;
-    }
 
-    .time__img {
-        justify-content: center;
-        align-content: center;
-        width: 100%;
-        height: 250px;
-    }
+        .time__body {
 
-    .time__img img {
-        width: 80%;
-        height: 220px;
+            .time__img {
+                justify-content: center;
+                align-content: center;
+                width: 100%;
+                height: 250px;
+
+                img {
+                    width: 80%;
+                    height: 220px;
+                }
+            }
+
+        }
     }
 
     .contenedor {
-        height: 100%;
+        height: auto;
         width: 100%;
-    }
 
-    .card__container {
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: auto;
-        grid-template-areas:
-            "area1"
-            "area2"
-            "area3"
-            "area4"
-    }
+        .card__header {
 
-    .c1 {
-        grid-area: area1;
-    }
+            h2 {
+                text-align: center;
+            }
+        }
 
-    .c2 {
-        grid-area: area2;
-    }
-
-    .c3 {
-        grid-area: area3;
-    }
-
-    .c4 {
-        grid-area: area4;
-    }
-
-    .card__header h2 {
-        text-align: center;
+        .card__container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
     }
 
     // meduaqueries personajes
 
-    .bg__image h1 {
+    .banner_champs h1 {
         text-align: center;
+    }
+
+    .bg__line {
+        color: #121314;
+        background-color: #fffcfc;
     }
 
     .line {
         background-color: #fffcfc;
         border-bottom: solid #121314;
-    }
 
-    .line__body {
-        background-color: #121212;
-    }
+        .line__body {
+            background-color: #121212;
 
-    .line__body img {
-        border-bottom-right-radius: 0px;
-        border-bottom-left-radius: 0px;
-    }
-
-    .bg {
-        color: #121314;
-        background-color: #fffcfc;
+            img {
+                border-bottom-right-radius: 0px;
+                border-bottom-left-radius: 0px;
+            }
+        }
     }
 
     // mediaqueries galeria
 
-    .bg__image h1 {
-        text-align: center;
+    .banner_gallery {
+
+        h1 {
+            text-align: center;
+        }
     }
 
-    .line {
-        background-color: #fffcfc;
-        border-bottom: solid #121314;
+    .title__gallery_1 {
+        background-color: $fondo-negro;
+        color: $font-blanco;
     }
 
-    .line__body {
-        background-color: #121212;
+    .gallery_1 {
+        background-color: $fondo-negro;
     }
 
-    .line__body img {
-        border-bottom-right-radius: 0px;
-        border-bottom-left-radius: 0px;
+    .title__gallery_2{
+        background-color: $fondo-blanco;
+        color: $font-negro;
     }
 
-    .bg {
-        color: #121314;
-        background-color: #fffcfc;
+    .gallery_2 {
+        background-color: $fondo-blanco;
+        border-bottom: solid #121212;
+    }
+
+    // mediaqueries juegos
+
+    .game {
+
+        .game__body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: #1f1f1f;
+
+            .game__img {
+                width: 100%;
+            }
+
+            .game__content {
+                width: 100%;
+
+                h3 {
+                    color: $font-blanco;
+                }
+
+                p {
+                    color: $font-blanco;
+                }
+            }
+        }
     }
 
     // mediaqueries footer

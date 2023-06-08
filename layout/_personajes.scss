@@ -15,7 +15,7 @@
     h1 {
         font-size: 5rem;
         font-weight: bold;
-        color: #000000;
+        color: $font-negro;
         opacity: 0.5;
     }
 }
@@ -25,9 +25,9 @@
     font-size: 3rem;
     font-weight: bold;
     padding: 30px;
-    color: #fffcfc;
+    color: $font-blanco;
     margin: 0px;
-    background-color: #121314;
+    background-color: $fondo-negro;
 }
 
 .line {
@@ -35,8 +35,9 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     text-align: center;
-    background-color: #121314;
+    background-color: $fondo-negro;
     padding: 15px;
+    height: auto;
 
     .line__body {
         margin: 15px;
@@ -47,12 +48,12 @@
             margin: 6px;
             font-size: 1.5rem;
             font-weight: bold;
-            color: #fffcfc;
+            color: $font-blanco;
         }
 
         p {
             font-size: 18px;
-            color: #fffcfc;
+            color: $font-blanco;
         }
 
         img {

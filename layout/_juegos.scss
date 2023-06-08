@@ -15,58 +15,81 @@
     h1 {
         font-size: 5rem;
         font-weight: bold;
-        color: #000000;
+        color: $font-negro;
         opacity: 0.7;
         letter-spacing: 1rem;
     }
 }
 
-.titulo__game{
+.titulo__game {
     height: 6rem;
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    padding: 15px;
 
-    .titulo__h2{
+    .titulo__h2 {
         font-size: 3rem;
-        color: #000;
-        padding-left: 20px;
+        color: $font-negro;
         align-self: center;
         font-weight: bold;
     }
 }
 
-.play {
-    display: flex;
-    flex-wrap: wrap;
+.game {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
     justify-content: center;
-    text-align: center;
-    background-color: #1f1f1f;
-    padding: 15px
+    align-items: center;
+    align-content: center;
+    height: auto;
+    width: 100%;
+    grid-gap: 20px;
+    padding: 15px;
+
+    .game__body {
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+        background-color: $fondo-negro;
+        box-shadow:
+        10px 10px 10px 0px #0f0f0fa8;
+
+        .game__img {
+            width: 35%;
+            height: auto;
+
+            img {
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+            }
+        }
+
+        .game__content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 65%;
+            height: auto;
+            overflow: hidden;
+
+            h3 {
+                font-size: 1.5rem;
+                color: $font-gris;
+                padding: 15px;
+                margin-bottom: 0rem;
+            }
+
+            p {
+                font-size: 1rem;
+                color: $font-gris;
+                padding-left: 15px;
+                padding-right: 15px;
+                margin-bottom: 0rem;
+            }
+        }
+    }
 }
 
-.play__body {
-    width: 80%;
-    text-align: left;
-    margin: 15px;
-
-    h3 {
-        padding: 10px 0;
-        font-size: 28px;
-        font-weight: bold;
-        color: #d1d1d1;
-    }
-
-    p {
-        font-size: 20px;
-        padding: 5px;
-        color: #d1d1d1;
-    }
-
-    img {
-        width: 200px;
-        height: 200px;
-        border: solid #8a0000;
-        border-radius: 3px;
-    }
-}

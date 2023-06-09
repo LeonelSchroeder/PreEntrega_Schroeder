@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:ror="http://rorweb.com/0.1/" >
+<channel>
+  <title>ROR Sitemap for https://leonelschroeder.github.io/PreEntrega_Schroeder/</title>
+  <link>https://leonelschroeder.github.io/PreEntrega_Schroeder/</link>
+
+<item>
+     <link>https://leonelschroeder.github.io/PreEntrega_Schroeder/</link>
+     <title>Inicio</title>
+     <description>Inicio</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>0</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://leonelschroeder.github.io/PreEntrega_Schroeder/index.html</link>
+     <title>Inicio</title>
+     <description>Inicio</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://leonelschroeder.github.io/PreEntrega_Schroeder/pages/personajes.html</link>
+     <title>Personajes</title>
+     <description>Personajes</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://leonelschroeder.github.io/PreEntrega_Schroeder/pages/galeria.html</link>
+     <title>Galeria</title>
+     <description>Galeria</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://leonelschroeder.github.io/PreEntrega_Schroeder/pages/juegos.html</link>
+     <title>Juegos</title>
+     <description>Juegos</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://leonelschroeder.github.io/PreEntrega_Schroeder/pages/curiosidades.html</link>
+     <title>Curiosidades</title>
+     <description>Curiosidades</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+</channel>
+</rss>
+  

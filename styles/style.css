@@ -7,11 +7,11 @@
 }
 
 .shadow-black, .curiosity .curiosity__body, .game .game__body {
-  box-shadow: 10px 10px 10px 0px rgba(15, 15, 15, 0.6588235294);
+  box-shadow: 10px 10px 5px rgba(15, 15, 15, 0.6588235294);
 }
 
 .shadow-light, .line .line__body, .time .time__body .time__img img {
-  box-shadow: 0px 5px 5px 5px rgba(245, 245, 245, 0.631372549);
+  box-shadow: 5px 5px 5px rgba(245, 245, 245, 0.631372549);
 }
 
 * {
@@ -26,8 +26,8 @@
   background-color: rgba(255, 255, 255, 0.4392156863);
 }
 .navbar .logo {
-  height: 40px;
-  width: 160px;
+  height: auto;
+  width: 8.5rem;
 }
 .navbar .offcanvas {
   background-color: #ffffff;
@@ -64,8 +64,8 @@ footer .container__footer .bi:hover {
 }
 footer .logo__footer {
   margin: 10px;
-  height: 50px;
-  width: 220px;
+  height: auto;
+  width: 10rem;
 }
 
 .God {
@@ -257,13 +257,18 @@ footer .logo__footer {
   letter-spacing: 1rem;
 }
 
+.fondo-gallery {
+  background-color: #121314;
+}
+
 .title__gallery_1 {
-  background-color: #fffcfc;
-  color: #0c0b0b;
-  padding: 15px;
+  background-color: #121314;
+  color: #F5F5F5;
+  padding: 20px;
   text-align: center;
   font-size: 3rem;
   margin-bottom: 0;
+  margin-top: 30px;
 }
 
 .title__gallery_2 {
@@ -274,66 +279,77 @@ footer .logo__footer {
   font-size: 3rem;
   margin-bottom: 0;
   height: auto;
+  border-top: 1px solid white;
 }
 
 .gallery_1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #fffcfc;
+  width: 100%;
+  max-width: 80%;
+  margin: auto;
+  margin-bottom: 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 250px;
+  grid-gap: 10px;
+  background-color: #121314;
 }
-.gallery_1 .cards__container {
-  width: 70%;
-}
-.gallery_1 .cards__container .card {
+.gallery_1 .box-img {
   height: auto;
-  margin-bottom: 0rem;
-  border-radius: 10px;
-  border: 0;
-  margin-bottom: 0rem;
-  margin: 5px;
 }
-.gallery_1 .cards__container .card .card-img-top {
-  border-radius: 10px;
+.gallery_1 .box-img:nth-child(1) {
+  grid-column-start: span 2;
+}
+.gallery_1 .box-img:nth-child(4) {
+  grid-row-start: span 2;
+}
+.gallery_1 .box-img:nth-child(5) {
+  grid-row-start: span 2;
+}
+.gallery_1 .box-img figure {
+  width: 100%;
+  height: 100%;
+}
+.gallery_1 .box-img figure img {
+  border-radius: 5px;
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: fixed;
-}
-.gallery_1 .row {
-  --bs-gutter-x: 0rem;
-  margin: 0;
-  padding: 0;
 }
 
 .gallery_2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
+  max-width: 80%;
+  margin: auto;
+  padding-bottom: 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 250px;
+  grid-gap: 10px;
   background-color: #121314;
 }
-.gallery_2 .cards__container {
-  width: 70%;
-}
-.gallery_2 .cards__container .card {
+.gallery_2 .box-img2 {
   height: auto;
-  margin-bottom: 0rem;
-  border-radius: 10px;
-  border: 0;
-  margin-bottom: 0rem;
-  margin: 5px;
 }
-.gallery_2 .cards__container .card .card-img-top {
-  border-radius: 10px;
+.gallery_2 .box-img2:nth-child(2) {
+  grid-column-start: span 2;
+}
+.gallery_2 .box-img2:nth-child(3) {
+  grid-row-start: span 2;
+}
+.gallery_2 .box-img2:nth-child(5) {
+  grid-row-start: span 2;
+}
+.gallery_2 .box-img2 figure {
+  width: 100%;
+  height: 100%;
+}
+.gallery_2 .box-img2 figure img {
+  border-radius: 5px;
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: fixed;
-}
-.gallery_2 .row {
-  --bs-gutter-x: 0rem;
-  margin: 0;
-  padding: 0;
 }
 
 /* Main juegos */
@@ -489,6 +505,11 @@ footer .logo__footer {
     width: 60%;
     height: auto;
   }
+  .God .God__content h1 {
+    letter-spacing: 0.5rem;
+    font-size: 3rem;
+    text-align: center;
+  }
   .God .God__content p {
     width: auto;
     height: auto;
@@ -522,6 +543,8 @@ footer .logo__footer {
     align-items: center;
   }
   .banner_champs h1 {
+    letter-spacing: 0.5rem;
+    font-size: 3rem;
     text-align: center;
   }
   .bg__line {
@@ -541,22 +564,29 @@ footer .logo__footer {
     border-bottom-left-radius: 0px;
   }
   .banner_gallery h1 {
+    letter-spacing: 0.5rem;
+    font-size: 3rem;
     text-align: center;
   }
-  .title__gallery_1 {
-    background-color: #121314;
-    color: #F5F5F5;
-  }
   .gallery_1 {
-    background-color: #121314;
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
-  .title__gallery_2 {
-    background-color: #fffcfc;
-    color: #0c0b0b;
+  .gallery_1 .box-img img {
+    height: 200px;
   }
   .gallery_2 {
-    background-color: #fffcfc;
-    border-bottom: solid #121212;
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .gallery_2 .box-img2 img {
+    height: 200px;
   }
   .game .game__body {
     display: flex;

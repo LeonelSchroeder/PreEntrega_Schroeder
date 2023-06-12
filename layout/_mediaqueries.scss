@@ -10,6 +10,12 @@
             width: 60%;
             height: auto;
 
+            h1 {
+                letter-spacing: 0.5rem;
+                font-size: 3rem;
+                text-align: center;
+            }
+
             p {
                 width: auto;
                 height: auto;
@@ -61,6 +67,8 @@
     // meduaqueries personajes
 
     .banner_champs h1 {
+        letter-spacing: 0.5rem;
+        font-size: 3rem;
         text-align: center;
     }
 
@@ -90,27 +98,38 @@
     .banner_gallery {
 
         h1 {
+            letter-spacing: 0.5rem;
+            font-size: 3rem;
             text-align: center;
         }
     }
 
-    .title__gallery_1 {
-        background-color: $fondo-negro;
-        color: $font-blanco;
-    }
-
     .gallery_1 {
-        background-color: $fondo-negro;
-    }
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
 
-    .title__gallery_2 {
-        background-color: $fondo-blanco;
-        color: $font-negro;
+        .box-img {
+            img {
+                height: 200px;
+            }
+        }
     }
 
     .gallery_2 {
-        background-color: $fondo-blanco;
-        border-bottom: solid #121212;
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        .box-img2 {
+            img {
+                height: 200px;
+            }
+        }
     }
 
     // mediaqueries juegos
@@ -137,7 +156,7 @@
             .game__content {
                 width: 100%;
 
-                p{
+                p {
                     text-align: center;
                 }
             }
@@ -146,9 +165,9 @@
 
     // mediaqueries curiosidades
 
-    .banner_curiosities{
+    .banner_curiosities {
 
-        h1{
+        h1 {
             letter-spacing: 0.5rem;
             font-size: 3rem;
             text-align: center;

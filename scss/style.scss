@@ -1,16 +1,16 @@
 // imports base
-@import "../base/vars";
-@import"../base/utilidades";
-@import "../base/reset";
+@import "base/vars";
+@import "base/utilidades";
+@import "base/reset";
 
 // imports components
-@import "../components/navbar";
-@import "../components/footer";
+@import "components/navbar";
+@import "components/footer";
 
 // imports layouts
-@import "../layout/index";
-@import "../layout/personajes";
-@import "../layout/galeria";
-@import "../layout/juegos";
-@import "../layout/curiosidades";
-@import "../layout/mediaqueries";
+@import "layout/index";
+@import "layout/personajes";
+@import "layout/galeria";
+@import "layout/juegos";
+@import "layout/curiosidades";
+@import "layout/mediaqueries";

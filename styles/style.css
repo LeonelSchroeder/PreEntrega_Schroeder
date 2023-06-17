@@ -274,6 +274,7 @@ footer .logo__footer {
 .line .line__body .line__body_description {
   font-size: 18px;
   color: #F5F5F5;
+  padding: 10px;
 }
 .line .line__body .line__body_img {
   height: 450px;

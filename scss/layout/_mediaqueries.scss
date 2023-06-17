@@ -384,9 +384,25 @@
     .banner_curiosities {
 
         h1 {
-            letter-spacing: 0.5rem;
+            letter-spacing: 0.2rem;
             font-size: $title-small;
             text-align: center;
+        }
+    }
+
+    .curiosity{
+
+        .curiosity__body{
+
+            .curiosity__body__title{
+                font-size: 1.6rem;
+                padding-bottom: 0px;
+            }
+
+            .curiosity__body__text{
+                font-size: .7rem;
+                padding-top: 5px;
+            }
         }
     }
 

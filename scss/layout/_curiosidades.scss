@@ -1,11 +1,10 @@
 /* Main curiosidades */
-
-.banner_curiosities{
+.banner_curiosities {
     background-image: url(../assets/fondo_curio.png);
-    @include flex(column,center,center);
+    @include flex(column, center, center);
     width: 100%;
     height: 100vh;
-    @include background(no-repeat,cover,center,fixed);
+    @include background(no-repeat, cover, center, fixed);
 
     h1 {
         font-size: $title-high;
@@ -16,23 +15,36 @@
     }
 }
 
-.curiosity{
+.intro{
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+    
+    .intro__body{
+        text-align: center;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+}
+
+.curiosity {
     background-color: $fondo-blanco;
     padding: 40px 20px;
 
-    .curiosity__body{
-        margin: 30px;
-        @include flex(column,center,center);
+    .curiosity__body {
+        margin: 40px;
+        @include flex(column, center, center);
         gap: 10px;
         background-color: $fondo-gris;
         border-radius: 10px;
         @extend .shadow-black;
 
-        &:hover{
-            @include hover-black (#000, 0.5s)
+        &:hover {
+            @include hover-black (#000, 0.5s);
+            transform: scale(1.05);
         }
 
-        &__title{
+        &__title {
             margin-bottom: 0px;
             @extend .gradient;
             font-size: 3rem;
@@ -40,12 +52,12 @@
             padding: 15px;
         }
 
-        &__text{
+        &__text {
             margin-bottom: 0px;
             font-size: 1.5rem;
             text-align: center;
             color: $font-blanco;
-            padding: 15px;
+            padding: 20px;
         }
     }
 }

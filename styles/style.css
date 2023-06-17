@@ -574,12 +574,23 @@ footer .logo__footer {
   letter-spacing: 1rem;
 }
 
+.intro {
+  width: 80%;
+  margin: auto;
+  margin-top: 40px;
+}
+.intro .intro__body {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
 .curiosity {
   background-color: #fffcfc;
   padding: 40px 20px;
 }
 .curiosity .curiosity__body {
-  margin: 30px;
+  margin: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -591,6 +602,7 @@ footer .logo__footer {
 .curiosity .curiosity__body:hover {
   background-color: #000;
   transition: 0.5s;
+  transform: scale(1.05);
 }
 .curiosity .curiosity__body__title {
   margin-bottom: 0px;
@@ -603,7 +615,7 @@ footer .logo__footer {
   font-size: 1.5rem;
   text-align: center;
   color: #F5F5F5;
-  padding: 15px;
+  padding: 20px;
 }
 
 @media screen and (min-width: 673px) and (max-width: 1024px) {
@@ -880,9 +892,17 @@ footer .logo__footer {
     text-align: center;
   }
   .banner_curiosities h1 {
-    letter-spacing: 0.5rem;
+    letter-spacing: 0.2rem;
     font-size: 2.7rem;
     text-align: center;
+  }
+  .curiosity .curiosity__body .curiosity__body__title {
+    font-size: 1.6rem;
+    padding-bottom: 0px;
+  }
+  .curiosity .curiosity__body .curiosity__body__text {
+    font-size: 0.7rem;
+    padding-top: 5px;
   }
   .container__footer {
     width: 100%;

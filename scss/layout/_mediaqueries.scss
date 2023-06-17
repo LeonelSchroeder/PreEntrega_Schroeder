@@ -8,11 +8,11 @@
 
         .God__content {
 
-            .God__title {
+            .God__content_title {
                 font-size: 4rem;
             }
 
-            .God__description {
+            .God__content_description {
                 width: auto;
                 text-align: center;
             }
@@ -45,7 +45,7 @@
 
         .time__body {
 
-            .time__img {
+            .time__body_img {
                 justify-content: center;
                 align-content: center;
                 width: 100%;
@@ -85,7 +85,63 @@
         text-align: center;
     }
 
-    // Galeria
+    // Juegos
+    .game {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: auto;
+
+        .game__body {
+            background-color: #1f1f1f;
+            border-radius: 8px;
+
+            .game__body_img {
+                width: 100%;
+
+                img {
+                    border-radius: 8px;
+                }
+            }
+
+            .game__body_content {
+                width: 100%;
+
+                p {
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .game2 {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: auto;
+        margin: 0;
+        width: 100%;
+        
+
+        .game2__body {
+            background-color: #1f1f1f;
+            border-radius: 8px;
+
+            .game2__body_img {
+                width: 100%;
+
+                img {
+                    border-radius: 8px;
+                }
+            }
+
+            .game2__body_content {
+                width: 100%;
+
+                p {
+                    text-align: center;
+                }
+            }
+        }
+    }
 
 }
 
@@ -101,16 +157,17 @@
             width: 60%;
             height: auto;
 
-            h1 {
+            .God__title {
                 letter-spacing: 0.5rem;
-                font-size: 3rem;
+                font-size: $title-small;
                 text-align: center;
             }
 
-            p {
+            .God__description {
                 width: auto;
                 height: auto;
                 text-align: center;
+                font-size: 1.2rem;
             }
         }
     }
@@ -123,10 +180,10 @@
         gap: 15px;
 
         .description__title {
-            width: 80%;
+            width: 90%;
 
             .description__title_h2{
-                font-size: 1.8rem;
+                font-size: 1.3rem;
             }
 
             .description__title_img {
@@ -135,8 +192,12 @@
         }
 
         .description__text {
-            width: 80%;
-            text-align: center;
+            width: 90%;
+
+            .description__text_p{
+                text-align: center;
+                font-size: 1rem;
+            }
         }
     }
 
@@ -145,16 +206,18 @@
         width: 100%;
 
         h2{
-            font-size: 2.5rem;
+            font-size: 2rem;
         }
 
         .time__body {
 
-            .time__img {
+            .time__body_img {
                 justify-content: center;
-                align-content: center;
-                width: 100%;
-                height: 250px;
+                align-items: center;
+
+                img{
+                    width: 80%;
+                }
             }
 
         }
@@ -168,7 +231,7 @@
 
             h2 {
                 text-align: center;
-                font-size: 2.5rem;
+                font-size: 2rem;
             }
         }
 
@@ -184,7 +247,7 @@
 
     .banner_champs h1 {
         letter-spacing: 0.5rem;
-        font-size: 3rem;
+        font-size: $title-small;
         text-align: center;
     }
 
@@ -202,7 +265,7 @@
             box-shadow:
                 10px 10px 10px 0px #0f0f0fc7;
 
-            img {
+            .line__body_img {
                 border-bottom-right-radius: 0px;
                 border-bottom-left-radius: 0px;
             }
@@ -215,7 +278,7 @@
 
         h1 {
             letter-spacing: 0.5rem;
-            font-size: 5rem;
+            font-size: $title-small;
             text-align: center;
         }
     }
@@ -253,6 +316,12 @@
     }
 
     // mediaqueries juegos
+    .banner_game {
+    
+        h1 {
+            font-size: $title-small;
+        }
+    }
 
     .game {
         display: grid;
@@ -263,7 +332,7 @@
             background-color: #1f1f1f;
             border-radius: 8px;
 
-            .game__img {
+            .game__body_img {
                 width: 100%;
 
                 img {
@@ -271,7 +340,36 @@
                 }
             }
 
-            .game__content {
+            .game__body_content {
+                width: 100%;
+
+                p {
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .game2 {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: auto;
+        margin: 0;
+        width: 100%;
+
+        .game2__body {
+            background-color: #1f1f1f;
+            border-radius: 8px;
+
+            .game2__body_img {
+                width: 100%;
+
+                img {
+                    border-radius: 8px;
+                }
+            }
+
+            .game2__body_content {
                 width: 100%;
 
                 p {
@@ -287,7 +385,7 @@
 
         h1 {
             letter-spacing: 0.5rem;
-            font-size: 4.5rem;
+            font-size: $title-small;
             text-align: center;
         }
     }

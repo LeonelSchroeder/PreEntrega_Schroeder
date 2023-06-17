@@ -7,9 +7,9 @@
 
     .God__content {
 
-        .God__title {
+        .God__content_title {
             color: $font-blanco;
-            font-size: 6rem;
+            font-size: $title-high;
             text-align: center;
             font-weight: bold;
             letter-spacing: 1rem;
@@ -17,7 +17,7 @@
             opacity: 0.8;
         }
 
-        .God__description {
+        .God__content_description {
             color: $font-blanco;
             font-size: 1.8rem;
             margin-bottom: 0;
@@ -31,6 +31,7 @@
     padding: 20px;
     height: auto;
     width: 100%;
+    background-color: $fondo-negro;
 
     .description__title{
         display: flex;
@@ -39,14 +40,17 @@
         align-items: center;
         gap: 10px;
         width: 50%;
+        padding: 15px;
 
         .description__title_h2{
             font-weight: bold;
-            font-size: 2rem;
+            font-size: 1.8rem;
+            color: $font-blanco;
         }
 
         .description__title_img{
             border-radius: 8px;
+            width: 100%;
         }
     }
 
@@ -54,7 +58,7 @@
         width: 50%;
         font-size: 1.4rem;
         padding: 20px;
-        font-weight: bolder;
+        color: $font-blanco;
     }
 }
 
@@ -63,6 +67,8 @@
     gap: 15px;
     background-color: $fondo-negro;
     height: auto;
+    background-image: url(../assets/fondo_7.png);
+    @include background(no-repeat,cover,center,fixed);
 
     h2 {
         color: $font-blanco;
@@ -75,12 +81,12 @@
     .time__body {
         padding-bottom: 30px;
 
-        .time__img {
+        .time__body_img {
             display: flex;
             justify-content: center;
 
             img {
-                @extend .shadow-light;
+                border-radius: 10px;
             }
         }
     }

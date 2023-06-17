@@ -8,7 +8,7 @@
     @include background(no-repeat,cover,center,fixed);
 
     h1 {
-        font-size: 5rem;
+        font-size: $title-high;
         font-weight: bold;
         color: #000000;
         opacity: 0.7;
@@ -29,8 +29,7 @@
         @extend .shadow-black;
 
         &:hover{
-            background-color: #000;
-            transition: 0.5s;
+            @include hover-black (#000, 0.5s)
         }
 
         &__title{

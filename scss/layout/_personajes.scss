@@ -7,7 +7,7 @@
     @include background(no-repeat,cover,center,fixed);
 
     h1 {
-        font-size: 5rem;
+        font-size: $title-high;
         font-weight: bold;
         color: $font-negro;
         opacity: 0.5;
@@ -39,19 +39,19 @@
         width: 250px;
         @extend .shadow-light;
 
-        h2 {
+        .line__body_title {
             margin: 6px;
             font-size: 1.5rem;
             font-weight: bold;
             color: $font-blanco;
         }
 
-        p {
+        .line__body_description {
             font-size: 18px;
             color: $font-blanco;
         }
 
-        img {
+        .line__body_img {
             height: 450px;
             width: 250px;
             border-radius: 15px;

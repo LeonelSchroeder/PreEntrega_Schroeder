@@ -13,6 +13,11 @@
     background-attachment: $attachment;
 }
 
+@mixin hover-black($background,$transition){
+    background-color: $background;
+    transition: $transition;
+}
+
 // Extend
 .gradient{
     background-image: linear-gradient(to right, #eb0f0f, #f8445f);

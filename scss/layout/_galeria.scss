@@ -7,7 +7,7 @@
     @include background(no-repeat, cover, center, fixed);
 
     h1 {
-        font-size: 6rem;
+        font-size: $title-high;
         font-weight: bold;
         color: $font-negro;
         opacity: 0.5;

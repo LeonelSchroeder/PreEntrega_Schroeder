@@ -1,16 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan&family=Roboto&display=swap");
-.gradient, .curiosity .curiosity__body__title, .game .game__body .game__content h3 {
+.gradient, .curiosity .curiosity__body__title, .game2 .game2__body .game2__body_content h3, .game .game__body .game__body_content h3 {
   background-image: linear-gradient(to right, #eb0f0f, #f8445f);
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
 }
 
-.shadow-black, .curiosity .curiosity__body, .game .game__body {
+.shadow-black, .curiosity .curiosity__body, .game2 .game2__body, .game .game__body {
   box-shadow: 10px 10px 5px rgba(15, 15, 15, 0.6588235294);
 }
 
-.shadow-light, .line .line__body, .time .time__body .time__img img {
+.shadow-light, .line .line__body {
   box-shadow: 5px 5px 5px rgba(245, 245, 245, 0.631372549);
 }
 
@@ -61,6 +61,7 @@ footer .container__footer .bi {
 }
 footer .container__footer .bi:hover {
   color: #950101;
+  transition: 0.3;
 }
 footer .logo__footer {
   margin: 10px;
@@ -81,7 +82,7 @@ footer .logo__footer {
   justify-content: center;
   align-items: center;
 }
-.God .God__content .God__title {
+.God .God__content .God__content_title {
   color: #F5F5F5;
   font-size: 6rem;
   text-align: center;
@@ -90,7 +91,7 @@ footer .logo__footer {
   margin-bottom: 2rem;
   opacity: 0.8;
 }
-.God .God__content .God__description {
+.God .God__content .God__content_description {
   color: #F5F5F5;
   font-size: 1.8rem;
   margin-bottom: 0;
@@ -102,6 +103,7 @@ footer .logo__footer {
   padding: 20px;
   height: auto;
   width: 100%;
+  background-color: #121314;
 }
 .description .description__title {
   display: flex;
@@ -110,19 +112,22 @@ footer .logo__footer {
   align-items: center;
   gap: 10px;
   width: 50%;
+  padding: 15px;
 }
 .description .description__title .description__title_h2 {
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.8rem;
+  color: #F5F5F5;
 }
 .description .description__title .description__title_img {
   border-radius: 8px;
+  width: 100%;
 }
 .description .description__text {
   width: 50%;
   font-size: 1.4rem;
   padding: 20px;
-  font-weight: bolder;
+  color: #F5F5F5;
 }
 
 .time {
@@ -133,6 +138,11 @@ footer .logo__footer {
   gap: 15px;
   background-color: #121314;
   height: auto;
+  background-image: url(../assets/fondo_7.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 .time h2 {
   color: #F5F5F5;
@@ -144,10 +154,14 @@ footer .logo__footer {
 .time .time__body {
   padding-bottom: 30px;
 }
-.time .time__body .time__img {
+.time .time__body .time__body_img {
   display: flex;
   justify-content: center;
 }
+.time .time__body .time__body_img img {
+  border-radius: 10px;
+}
+
 .contenedor {
   background-image: url(../assets/Fondo_2.jpg);
   background-repeat: no-repeat;
@@ -221,7 +235,7 @@ footer .logo__footer {
   background-attachment: fixed;
 }
 .banner_champs h1 {
-  font-size: 5rem;
+  font-size: 6rem;
   font-weight: bold;
   color: #0c0b0b;
   opacity: 0.5;
@@ -251,17 +265,17 @@ footer .logo__footer {
   border-radius: 15px;
   width: 250px;
 }
-.line .line__body h2 {
+.line .line__body .line__body_title {
   margin: 6px;
   font-size: 1.5rem;
   font-weight: bold;
   color: #F5F5F5;
 }
-.line .line__body p {
+.line .line__body .line__body_description {
   font-size: 18px;
   color: #F5F5F5;
 }
-.line .line__body img {
+.line .line__body .line__body_img {
   height: 450px;
   width: 250px;
   border-radius: 15px;
@@ -404,7 +418,7 @@ footer .logo__footer {
   background-attachment: fixed;
 }
 .banner_game h1 {
-  font-size: 5rem;
+  font-size: 6rem;
   font-weight: bold;
   color: #0c0b0b;
   opacity: 0.8;
@@ -417,7 +431,7 @@ footer .logo__footer {
   justify-content: center;
   padding: 15px;
 }
-.titulo__game .titulo__h2 {
+.titulo__game .titulo__game_h2 {
   font-size: 3rem;
   color: #0c0b0b;
   align-self: center;
@@ -426,7 +440,7 @@ footer .logo__footer {
 
 .game {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
   justify-content: center;
   height: auto;
@@ -436,22 +450,27 @@ footer .logo__footer {
 .game .game__body {
   display: flex;
   flex-direction: column;
-  background-color: #121314;
+  background-color: #202020;
   border-radius: 8px;
   width: auto;
   height: auto;
 }
-.game .game__body .game__img {
+.game .game__body:hover {
+  background-color: #000;
+  transition: 0.5s;
+}
+.game .game__body .game__body_img {
   width: auto;
   height: auto;
 }
-.game .game__body .game__img img {
+.game .game__body .game__body_img img {
   width: 100%;
-  height: auto;
   object-fit: cover;
   border-radius: 8px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
-.game .game__body .game__content {
+.game .game__body .game__body_content {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -459,17 +478,76 @@ footer .logo__footer {
   height: auto;
   overflow: hidden;
 }
-.game .game__body .game__content h3 {
+.game .game__body .game__body_content h3 {
   font-size: 2rem;
   font-weight: bold;
   padding: 15px;
   margin-bottom: 0rem;
 }
-.game .game__body .game__content p {
+.game .game__body .game__body_content p {
   font-size: 1.2rem;
   color: #F5F5F5;
   padding-left: 15px;
   padding-right: 15px;
+  padding-bottom: 25px;
+  margin-bottom: 0rem;
+}
+
+.game2 {
+  width: 67%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  justify-content: center;
+  height: auto;
+  grid-gap: 20px;
+  padding: 15px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+.game2 .game2__body {
+  display: flex;
+  flex-direction: column;
+  background-color: #202020;
+  border-radius: 8px;
+  width: auto;
+  height: auto;
+}
+.game2 .game2__body:hover {
+  background-color: #000;
+  transition: 0.5s;
+}
+.game2 .game2__body .game2__body_img {
+  width: auto;
+  height: auto;
+}
+.game2 .game2__body .game2__body_img img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+.game2 .game2__body .game2__body_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  overflow: hidden;
+}
+.game2 .game2__body .game2__body_content h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 15px;
+  margin-bottom: 0rem;
+}
+.game2 .game2__body .game2__body_content p {
+  font-size: 1.2rem;
+  color: #F5F5F5;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 25px;
   margin-bottom: 0rem;
 }
 
@@ -488,7 +566,7 @@ footer .logo__footer {
   background-attachment: fixed;
 }
 .banner_curiosities h1 {
-  font-size: 5rem;
+  font-size: 6rem;
   font-weight: bold;
   color: #000000;
   opacity: 0.7;
@@ -533,10 +611,10 @@ footer .logo__footer {
     align-content: center;
     flex-direction: row;
   }
-  .God .God__content .God__title {
+  .God .God__content .God__content_title {
     font-size: 4rem;
   }
-  .God .God__content .God__description {
+  .God .God__content .God__content_description {
     width: auto;
     text-align: center;
   }
@@ -560,12 +638,12 @@ footer .logo__footer {
   .time {
     width: 100%;
   }
-  .time .time__body .time__img {
+  .time .time__body .time__body_img {
     justify-content: center;
     align-content: center;
     width: 100%;
   }
-  .time .time__body .time__img img {
+  .time .time__body .time__body_img img {
     width: 80%;
     height: auto;
   }
@@ -585,6 +663,50 @@ footer .logo__footer {
   .banner_champs h1 {
     letter-spacing: 0.5rem;
     font-size: 2.5rem;
+    text-align: center;
+  }
+  .game {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: auto;
+  }
+  .game .game__body {
+    background-color: #1f1f1f;
+    border-radius: 8px;
+  }
+  .game .game__body .game__body_img {
+    width: 100%;
+  }
+  .game .game__body .game__body_img img {
+    border-radius: 8px;
+  }
+  .game .game__body .game__body_content {
+    width: 100%;
+  }
+  .game .game__body .game__body_content p {
+    text-align: center;
+  }
+  .game2 {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: auto;
+    margin: 0;
+    width: 100%;
+  }
+  .game2 .game2__body {
+    background-color: #1f1f1f;
+    border-radius: 8px;
+  }
+  .game2 .game2__body .game2__body_img {
+    width: 100%;
+  }
+  .game2 .game2__body .game2__body_img img {
+    border-radius: 8px;
+  }
+  .game2 .game2__body .game2__body_content {
+    width: 100%;
+  }
+  .game2 .game2__body .game2__body_content p {
     text-align: center;
   }
 }
@@ -598,15 +720,16 @@ footer .logo__footer {
     width: 60%;
     height: auto;
   }
-  .God .God__content h1 {
+  .God .God__content .God__title {
     letter-spacing: 0.5rem;
-    font-size: 3rem;
+    font-size: 2.7rem;
     text-align: center;
   }
-  .God .God__content p {
+  .God .God__content .God__description {
     width: auto;
     height: auto;
     text-align: center;
+    font-size: 1.2rem;
   }
   .description {
     display: flex;
@@ -616,30 +739,34 @@ footer .logo__footer {
     gap: 15px;
   }
   .description .description__title {
-    width: 80%;
+    width: 90%;
   }
   .description .description__title .description__title_h2 {
-    font-size: 1.8rem;
+    font-size: 1.3rem;
   }
   .description .description__title .description__title_img {
     width: 80%;
   }
   .description .description__text {
-    width: 80%;
+    width: 90%;
+  }
+  .description .description__text .description__text_p {
     text-align: center;
+    font-size: 1rem;
   }
   .time {
     height: auto;
     width: 100%;
   }
   .time h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
-  .time .time__body .time__img {
+  .time .time__body .time__body_img {
     justify-content: center;
-    align-content: center;
-    width: 100%;
-    height: 250px;
+    align-items: center;
+  }
+  .time .time__body .time__body_img img {
+    width: 80%;
   }
   .contenedor {
     height: auto;
@@ -647,7 +774,7 @@ footer .logo__footer {
   }
   .contenedor .card__header h2 {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   .contenedor .card__container {
     display: flex;
@@ -657,7 +784,7 @@ footer .logo__footer {
   }
   .banner_champs h1 {
     letter-spacing: 0.5rem;
-    font-size: 3rem;
+    font-size: 2.7rem;
     text-align: center;
   }
   .bg__line {
@@ -672,13 +799,13 @@ footer .logo__footer {
     background-color: #121212;
     box-shadow: 10px 10px 10px 0px rgba(15, 15, 15, 0.7803921569);
   }
-  .line .line__body img {
+  .line .line__body .line__body_img {
     border-bottom-right-radius: 0px;
     border-bottom-left-radius: 0px;
   }
   .banner_gallery h1 {
     letter-spacing: 0.5rem;
-    font-size: 5rem;
+    font-size: 2.7rem;
     text-align: center;
   }
   .gallery_1 {
@@ -704,6 +831,9 @@ footer .logo__footer {
   .gallery_2 .box-img2 img {
     height: 200px;
   }
+  .banner_game h1 {
+    font-size: 2.7rem;
+  }
   .game {
     display: grid;
     grid-template-columns: repeat(1, auto);
@@ -713,21 +843,44 @@ footer .logo__footer {
     background-color: #1f1f1f;
     border-radius: 8px;
   }
-  .game .game__body .game__img {
+  .game .game__body .game__body_img {
     width: 100%;
   }
-  .game .game__body .game__img img {
+  .game .game__body .game__body_img img {
     border-radius: 8px;
   }
-  .game .game__body .game__content {
+  .game .game__body .game__body_content {
     width: 100%;
   }
-  .game .game__body .game__content p {
+  .game .game__body .game__body_content p {
+    text-align: center;
+  }
+  .game2 {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: auto;
+    margin: 0;
+    width: 100%;
+  }
+  .game2 .game2__body {
+    background-color: #1f1f1f;
+    border-radius: 8px;
+  }
+  .game2 .game2__body .game2__body_img {
+    width: 100%;
+  }
+  .game2 .game2__body .game2__body_img img {
+    border-radius: 8px;
+  }
+  .game2 .game2__body .game2__body_content {
+    width: 100%;
+  }
+  .game2 .game2__body .game2__body_content p {
     text-align: center;
   }
   .banner_curiosities h1 {
     letter-spacing: 0.5rem;
-    font-size: 4.5rem;
+    font-size: 2.7rem;
     text-align: center;
   }
   .container__footer {

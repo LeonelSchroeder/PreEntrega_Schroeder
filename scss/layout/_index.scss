@@ -7,7 +7,7 @@
 
     .God__content {
 
-        .God__content_title {
+        &_title {
             color: $font-blanco;
             font-size: $title-high;
             text-align: center;
@@ -17,7 +17,7 @@
             opacity: 0.8;
         }
 
-        .God__content_description {
+        &_description {
             color: $font-blanco;
             font-size: 1.8rem;
             margin-bottom: 0;
@@ -42,13 +42,13 @@
         width: 50%;
         padding: 15px;
 
-        .description__title_h2{
+        &_h2{
             font-weight: bold;
             font-size: 1.8rem;
             color: $font-blanco;
         }
 
-        .description__title_img{
+        &_img{
             border-radius: 8px;
             width: 100%;
         }
@@ -81,7 +81,7 @@
     .time__body {
         padding-bottom: 30px;
 
-        .time__body_img {
+        &_img {
             display: flex;
             justify-content: center;
 

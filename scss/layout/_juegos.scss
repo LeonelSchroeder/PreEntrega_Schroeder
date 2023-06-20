@@ -51,7 +51,7 @@
             @include hover-black (#000, 0.5s)
         }
 
-        .game__body_img {
+        &_img {
             width: auto;
             height: auto;
 
@@ -64,7 +64,7 @@
             }
         }
 
-        .game__body_content {
+        &_content {
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -117,7 +117,7 @@
             @include hover-black (#000, 0.5s)
         }
 
-        .game2__body_img {
+        &_img {
             width: auto;
             height: auto;
 
@@ -130,7 +130,7 @@
             }
         }
 
-        .game2__body_content {
+        &_content {
             display: flex;
             flex-direction: column;
             justify-content: center;

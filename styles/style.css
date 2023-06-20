@@ -624,10 +624,11 @@ footer .logo__footer {
     align-content: center;
     flex-direction: row;
   }
-  .God .God__content .God__content_title {
+  .God .God__content_title {
     font-size: 4rem;
+    text-align: center;
   }
-  .God .God__content .God__content_description {
+  .God .God__content_description {
     width: auto;
     text-align: center;
   }
@@ -641,7 +642,10 @@ footer .logo__footer {
   .description .description__title {
     width: 80%;
   }
-  .description .description__title .description__title_img {
+  .description .description__title_h2 {
+    text-align: center;
+  }
+  .description .description__title_img {
     width: 80%;
   }
   .description .description__text {
@@ -651,12 +655,12 @@ footer .logo__footer {
   .time {
     width: 100%;
   }
-  .time .time__body .time__body_img {
+  .time .time__body_img {
     justify-content: center;
     align-content: center;
     width: 100%;
   }
-  .time .time__body .time__body_img img {
+  .time .time__body_img img {
     width: 80%;
     height: auto;
   }
@@ -687,16 +691,16 @@ footer .logo__footer {
     background-color: #1f1f1f;
     border-radius: 8px;
   }
-  .game .game__body .game__body_img {
+  .game .game__body_img {
     width: 100%;
   }
-  .game .game__body .game__body_img img {
+  .game .game__body_img img {
     border-radius: 8px;
   }
-  .game .game__body .game__body_content {
+  .game .game__body_content {
     width: 100%;
   }
-  .game .game__body .game__body_content p {
+  .game .game__body_content p {
     text-align: center;
   }
   .game2 {
@@ -710,16 +714,16 @@ footer .logo__footer {
     background-color: #1f1f1f;
     border-radius: 8px;
   }
-  .game2 .game2__body .game2__body_img {
+  .game2 .game2__body_img {
     width: 100%;
   }
-  .game2 .game2__body .game2__body_img img {
+  .game2 .game2__body_img img {
     border-radius: 8px;
   }
-  .game2 .game2__body .game2__body_content {
+  .game2 .game2__body_content {
     width: 100%;
   }
-  .game2 .game2__body .game2__body_content p {
+  .game2 .game2__body_content p {
     text-align: center;
   }
 }
@@ -733,12 +737,12 @@ footer .logo__footer {
     width: 60%;
     height: auto;
   }
-  .God .God__content .God__title {
+  .God .God__content_title {
     letter-spacing: 0.5rem;
     font-size: 2.7rem;
     text-align: center;
   }
-  .God .God__content .God__description {
+  .God .God__content_description {
     width: auto;
     height: auto;
     text-align: center;
@@ -754,16 +758,17 @@ footer .logo__footer {
   .description .description__title {
     width: 90%;
   }
-  .description .description__title .description__title_h2 {
+  .description .description__title_h2 {
     font-size: 1.3rem;
+    text-align: center;
   }
-  .description .description__title .description__title_img {
+  .description .description__title_img {
     width: 80%;
   }
   .description .description__text {
     width: 90%;
   }
-  .description .description__text .description__text_p {
+  .description .description__text_p {
     text-align: center;
     font-size: 1rem;
   }
@@ -774,11 +779,11 @@ footer .logo__footer {
   .time h2 {
     font-size: 2rem;
   }
-  .time .time__body .time__body_img {
+  .time .time__body_img {
     justify-content: center;
     align-items: center;
   }
-  .time .time__body .time__body_img img {
+  .time .time__body_img img {
     width: 80%;
   }
   .contenedor {
@@ -812,7 +817,7 @@ footer .logo__footer {
     background-color: #121212;
     box-shadow: 10px 10px 10px 0px rgba(15, 15, 15, 0.7803921569);
   }
-  .line .line__body .line__body_img {
+  .line .line__body_img {
     border-bottom-right-radius: 0px;
     border-bottom-left-radius: 0px;
   }
@@ -820,6 +825,13 @@ footer .logo__footer {
     letter-spacing: 0.5rem;
     font-size: 2.7rem;
     text-align: center;
+  }
+  .title__gallery_1 {
+    font-size: 2rem;
+    margin-top: 0;
+  }
+  .title__gallery_2 {
+    font-size: 2rem;
   }
   .gallery_1 {
     width: 90%;
@@ -856,16 +868,14 @@ footer .logo__footer {
     background-color: #1f1f1f;
     border-radius: 8px;
   }
-  .game .game__body .game__body_img {
+  .game .game__body_img {
     width: 100%;
   }
-  .game .game__body .game__body_img img {
+  .game .game__body_img img {
     border-radius: 8px;
   }
-  .game .game__body .game__body_content {
+  .game .game__body_content {
     width: 100%;
-  }
-  .game .game__body .game__body_content p {
     text-align: center;
   }
   .game2 {
@@ -879,16 +889,16 @@ footer .logo__footer {
     background-color: #1f1f1f;
     border-radius: 8px;
   }
-  .game2 .game2__body .game2__body_img {
+  .game2 .game2__body_img {
     width: 100%;
   }
-  .game2 .game2__body .game2__body_img img {
+  .game2 .game2__body_img img {
     border-radius: 8px;
   }
-  .game2 .game2__body .game2__body_content {
+  .game2 .game2__body_content {
     width: 100%;
   }
-  .game2 .game2__body .game2__body_content p {
+  .game2 .game2__body_content p {
     text-align: center;
   }
   .banner_curiosities h1 {
@@ -896,11 +906,11 @@ footer .logo__footer {
     font-size: 2.7rem;
     text-align: center;
   }
-  .curiosity .curiosity__body .curiosity__body__title {
-    font-size: 1.6rem;
+  .curiosity .curiosity__body__title {
+    font-size: 1.4rem;
     padding-bottom: 0px;
   }
-  .curiosity .curiosity__body .curiosity__body__text {
+  .curiosity .curiosity__body__text {
     font-size: 0.7rem;
     padding-top: 5px;
   }

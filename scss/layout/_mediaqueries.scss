@@ -8,11 +8,12 @@
 
         .God__content {
 
-            .God__content_title {
+            &_title {
                 font-size: 4rem;
+                text-align: center;
             }
 
-            .God__content_description {
+            &_description {
                 width: auto;
                 text-align: center;
             }
@@ -28,8 +29,12 @@
 
         .description__title {
             width: 80%;
+            
+            &_h2{
+                text-align: center;
+            }
 
-            .description__title_img {
+            &_img {
                 width: 80%;
             }
         }
@@ -45,7 +50,7 @@
 
         .time__body {
 
-            .time__body_img {
+            &_img {
                 justify-content: center;
                 align-content: center;
                 width: 100%;
@@ -95,7 +100,7 @@
             background-color: #1f1f1f;
             border-radius: 8px;
 
-            .game__body_img {
+            &_img {
                 width: 100%;
 
                 img {
@@ -103,7 +108,7 @@
                 }
             }
 
-            .game__body_content {
+            &_content {
                 width: 100%;
 
                 p {
@@ -125,7 +130,7 @@
             background-color: #1f1f1f;
             border-radius: 8px;
 
-            .game2__body_img {
+            &_img {
                 width: 100%;
 
                 img {
@@ -133,7 +138,7 @@
                 }
             }
 
-            .game2__body_content {
+            &_content {
                 width: 100%;
 
                 p {
@@ -157,13 +162,13 @@
             width: 60%;
             height: auto;
 
-            .God__title {
+            &_title {
                 letter-spacing: 0.5rem;
                 font-size: $title-small;
                 text-align: center;
             }
 
-            .God__description {
+            &_description {
                 width: auto;
                 height: auto;
                 text-align: center;
@@ -182,11 +187,12 @@
         .description__title {
             width: 90%;
 
-            .description__title_h2{
+            &_h2{
                 font-size: 1.3rem;
+                text-align: center;
             }
 
-            .description__title_img {
+            &_img {
                 width: 80%;
             }
         }
@@ -194,7 +200,7 @@
         .description__text {
             width: 90%;
 
-            .description__text_p{
+            &_p{
                 text-align: center;
                 font-size: 1rem;
             }
@@ -211,7 +217,7 @@
 
         .time__body {
 
-            .time__body_img {
+            &_img {
                 justify-content: center;
                 align-items: center;
 
@@ -265,7 +271,7 @@
             box-shadow:
                 10px 10px 10px 0px #0f0f0fc7;
 
-            .line__body_img {
+            &_img {
                 border-bottom-right-radius: 0px;
                 border-bottom-left-radius: 0px;
             }
@@ -281,6 +287,15 @@
             font-size: $title-small;
             text-align: center;
         }
+    }
+
+    .title__gallery_1{
+        font-size: 2rem;
+        margin-top: 0;
+    }
+
+    .title__gallery_2{
+        font-size: 2rem;
     }
 
     .gallery_1 {
@@ -332,7 +347,7 @@
             background-color: #1f1f1f;
             border-radius: 8px;
 
-            .game__body_img {
+            &_img {
                 width: 100%;
 
                 img {
@@ -340,12 +355,9 @@
                 }
             }
 
-            .game__body_content {
+            &_content {
                 width: 100%;
-
-                p {
-                    text-align: center;
-                }
+                text-align: center;
             }
         }
     }
@@ -361,7 +373,7 @@
             background-color: #1f1f1f;
             border-radius: 8px;
 
-            .game2__body_img {
+            &_img {
                 width: 100%;
 
                 img {
@@ -369,7 +381,7 @@
                 }
             }
 
-            .game2__body_content {
+            &_content {
                 width: 100%;
 
                 p {
@@ -394,12 +406,12 @@
 
         .curiosity__body{
 
-            .curiosity__body__title{
-                font-size: 1.6rem;
+            &__title{
+                font-size: 1.4rem;
                 padding-bottom: 0px;
             }
 
-            .curiosity__body__text{
+            &__text{
                 font-size: .7rem;
                 padding-top: 5px;
             }

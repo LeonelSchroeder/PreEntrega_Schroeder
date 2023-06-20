@@ -1,9 +1,9 @@
 .God {
     background-image: url(../assets/fondo_1.jpg);
-    @include background(no-repeat,cover,center,fixed);
+    @include background(no-repeat, cover, center, fixed);
     width: 100%;
     min-height: 100vh;
-    @include flex(column,center,center);
+    @include flex(column, center, center);
 
     .God__content {
 
@@ -25,7 +25,7 @@
     }
 }
 
-.description{
+.description {
     display: flex;
     flex-direction: row;
     padding: 20px;
@@ -33,7 +33,7 @@
     width: 100%;
     background-color: $fondo-negro;
 
-    .description__title{
+    .description__title {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -42,19 +42,19 @@
         width: 50%;
         padding: 15px;
 
-        &_h2{
+        &_h2 {
             font-weight: bold;
             font-size: 1.8rem;
             color: $font-blanco;
         }
 
-        &_img{
+        &_img {
             border-radius: 8px;
             width: 100%;
         }
     }
 
-    .description__text{
+    .description__text {
         width: 50%;
         font-size: 1.4rem;
         padding: 20px;
@@ -63,12 +63,12 @@
 }
 
 .time {
-    @include flex(column,center,center);
+    @include flex(column, center, center);
     gap: 15px;
     background-color: $fondo-negro;
     height: auto;
     background-image: url(../assets/fondo_7.png);
-    @include background(no-repeat,cover,center,fixed);
+    @include background(no-repeat, cover, center, fixed);
 
     h2 {
         color: $font-blanco;
@@ -162,5 +162,4 @@
             grid-area: area4;
         }
     }
-
 }
